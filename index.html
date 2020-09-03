@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Barlow+Semi+Condensed:wght@300&family=Montserrat:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Covid-19 Tracker</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="covid-icon" src="./images/virus.svg" alt="covid-icon" />
+        <h1>Covid-19</h1>
+        <img class="covid-icon" src="./images/virus.svg" alt="covid-icon" />
+      </nav>
+    </header>
+    <section>
+      <div class="info__section">
+        <h2 class="title">Daily statistics</h2>
+        <h3>Last update: <span class="last__update">10.09.2020</span></h3>
+        <br />
+        <div class="totals">
+          <div class="total">
+            <h1 class="total__cases">100</h1>
+            <h2>Total caces</h2>
+          </div>
+          <div class="total">
+            <h1 class="total__deaths">100</h1>
+            <h2>Total deaths</h2>
+          </div>
+          <div class="total">
+            <h1 class="total__recovered">100</h1>
+            <h2>Total recovered</h2>
+          </div>
+        </div>
+        <div></div>
+        <select defaulValue="select" class="country-selector">
+          <option
+            class="dis-value select-country"
+            disabled
+            value="select"
+            selected
+          >
+            -select country-
+          </option>
+        </select>
+        <div class="info-list">
+          <div class="info-block">
+            <!-- <h1 class = "title">Ukraine</h1>
+                <div class = "stats">
+                    <h3 class = "country-infected">Infected: 43</h3>
+                    <h3 class = "country-deaths">Deaths: 43</h3>
+                    <h3 class = "country-recovered">Recovered: 43</h3>
+                </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="graph-section">
+        <!-- <img src="./images/249.gif" alt="dashboard"> -->
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
